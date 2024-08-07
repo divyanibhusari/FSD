@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxmodel in Css</title>
+    <style>
+        /* Content */
+        .d1{
+           width: 300px;
+           height: 300px;
+           background-color: brown;
+           color: white;
+           
+           
+        }
+        .d2{
+            width: 100px;
+            height: 100px;
+            background-color: palevioletred;
+            color: chartreuse;
+            /* padding: 50px; */
+            /* padding: 100px 23px 45px 29px; */
+            padding: 100px 150px;
+            /* padding-top: 130px;
+            padding-right: 120px;
+            padding-bottom: 135px;
+            padding-left: 120px; */
+            /* Total Heigth=pt+height+pb */
+            /* Total Width=pl+width+pr */
+        }
+        .d3{
+            width: 300px;
+            height: 300px;
+            background-color: blueviolet;
+            border: 10px solid brown;
+            /* border-top: 15px solid salmon;
+            border-right: 20px dotted aqua;
+            border-bottom: 20px dashed gray;
+            border-left: 25px solid rosybrown; */
+            /* Total Border =bt+pt+height+bb+pb */
+            /* total border =bl+pl+Width+br+pr */
+        }
+        .d4{
+            width: 250px;
+            height: 150px;
+            background-color: chocolate;
+            margin: 50px;
+            /* margin: 100px 230px 15px 23px; */
+            /* margin: 120px 100px; */
+           /* Total height=mt+bt+pt+height+pb+bb+mb */
+            /* Total width=ml+bl+pl+width+pr+br+mr */
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <span>
+            this is content!
+        </span>
+    </div>
+    <div class="d2"><span>This is a padding !</span></div>
+    <div class="d3"><span>This is a Border!</span></div>
+    <div class="d4"><span>this is a Margin!</span></div>
+    
+</body>
+</html>

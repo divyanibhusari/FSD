@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solor Planet</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .Universal{
+            background-color: black;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .Universal > #sun{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(231, 108, 27);
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 5rem; */
+            border-radius: 50%;
+            background-position: left;
+            box-shadow: 0 0 30px 15px rgb(222,88,1);
+        }
+        .Universal > #mercury{
+            width: 60px;
+            height: 60px;
+            background-color: #8A8B8B;
+            border-radius: 100%;
+           
+        }
+
+        .Universal > #venus{
+            width: 60px;
+            height: 60px;
+            background-color: #CD9260;
+            border-radius: 100%;
+           
+        }
+        .Universal > #earth{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 100%;
+            box-shadow: 0 0 70px 0.1px rgb(233, 233, 237);
+        }
+
+        .Universal > #mars{
+            width: 80px;
+            height: 80px;
+            background-color: #ae7157;
+            border-radius: 100%;
+          
+           
+        }
+        .Universal > #jupiter{
+            width: 250px;
+            height: 250px;
+            background-color: #D9CBAA;
+            border-radius: 100%;
+            box-shadow: 0 0 90px 0.1px rgb(233, 230, 230);
+        }
+        .Universal > #saturn{
+            width: 150px;
+            height: 150px;
+            background-color: #C9AE71;
+            border-radius: 100%;
+           
+        }
+        .Universal > #uranus{
+            width: 90px;
+            height: 90px;
+            background-color: #BDCDD2;
+            border-radius: 100%;
+           
+        }
+        .Universal > #neptune{
+            width: 80px;
+            height: 80px;
+            background-color: #364379;
+            border-radius: 100%;
+           box-shadow: 0 0 50px 0.1px hwb(240 99% 0%);
+        }
+        @media screen and (max-width:576px){
+            .Universal{
+                flex-direction: column;
+            }
+        }
+        .Universal > .Planet{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+        }   
+        </style>
+    
+</head>
+<body>
+    <div class="s1" style="color: rgb(13, 13, 249); background-color: white; display: flex; align-items: center; justify-content: center; text-transform: uppercase;"><h1>Solor Planet</h1></div>
+    <div class="Universal">
+        <div id="sun" class="Planet" style="font-size: 7rem;">SUN</div>
+        <div id="mercury" class="Planet" style="font-size: 0.7rem;">MERCURY</div>
+        <div  id="venus" class="Planet" style="font-size: 1rem;">VENUS</div>
+        
+        <div id="earth" class="Planet" style="font-size: 1rem;">EARTH</div>
+        <div  id="mars" class="Planet" style="font-size: 1rem;">MARS</div>
+        <div id="jupiter" class="Planet" style="font-size: 2rem;">JUPITER</div>
+        <div id="saturn" class="Planet" style="font-size: 2rem;">SATURN</div>
+        <div id="uranus" class="Planet" style="font-size: 1rem;">URANUS</div>
+        <div  id="neptune" class="Planet" style="font-size: 0.9rem; color: white;"> NEPTUNE</div>
+    </div>
+</body>
+</html>

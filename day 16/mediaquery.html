@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        *{
+            margin: 5px;
+            padding: 5px;
+        }
+        .parent{
+            width: 500px;
+            height: 600px;
+            border: 2px soild black;
+            display: flex;
+            gap: 2px;
+        }
+        .child{
+            width: 400px;
+            height: 100px;
+            background-color: red;
+        }
+        @media screen and (max-width:576px) {
+            .parent{
+                flex-direction: column;
+            }
+        }
+        .parent > .child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: white;
+
+        }
+        .child:hover{
+            background-color: rgb(192, 169, 173);
+            color: black;
+        }
+        /* .parent:nth-child(1):hov{
+            background-color: aqua;
+
+        }
+        .parent:hover{
+            background-color: aqua;
+        }
+         */
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">Navigation Menu</div>
+        <div class="child">Home</div>
+        <div class="child">Service</div>
+        <div class="child">About Us</div>
+        <div class="child">News</div>
+        <div class="child">Contact</div>
+       
+    </div>
+</body>
+</html>

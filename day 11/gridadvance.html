@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            display: grid;
+            gap: 6px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+        }
+        .grid-child{
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+
+        }
+        .gc1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-image: url(https://picsum.photos/id/237/200/300);
+            background-size: cover;
+        }
+        
+        .gc3{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 4;
+      
+          
+          }
+         .gc4{
+            
+            grid-column-start:1 ;
+            grid-column-end:2 ;
+            grid-row-start:2 ;
+            grid-row-end: 3;
+            background-image: url(https://picsum.photos/200/300);
+            background-size: cover;
+         }
+          
+         
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="grid-child gc1">1 </div>
+        <div class="grid-child gc2">2</div>
+        <div class="grid-child gc3"> 
+            <img src="https://picsum.photos/328/330" alt="">
+        </div>
+        <div class="grid-child gc4">4</div>
+        <div class="grid-child gc5">5</div>
+         <div class="grid-child gc6">6</div>
+        
+    </div>
+</body>
+</html>

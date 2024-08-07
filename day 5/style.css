@@ -1,0 +1,51 @@
+/* 1.universal */
+*{
+    color: rgb(235, 12, 50);
+    /* background-color: rgb(161, 161, 220); */
+}
+*{
+    color: rgb(20, 217, 217);
+    background-color: rgb(224, 168, 96);
+}
+/* 2.by tag name */
+h1{
+    color: blueviolet;
+    background-color: brown;
+}
+h4{
+    color: rgb(158, 212, 103);
+}
+h5{
+    color: rgb(231, 27, 27);
+}
+p{
+    color: blueviolet;
+}
+/* 3.by class name */
+.c1{
+    color: rgb(131, 103, 157);
+}
+.c2{
+    color: blue;
+}
+.c4{
+    color: aqua;
+}
+.c6{
+    color: rgb(11, 14, 14);
+}
+/* 4.by id */
+#i4{
+   color: rgb(11, 227, 65);
+}
+#i5{
+    color: rgb(16, 219, 222);
+}
+#i3{
+    color: rgb(33, 10, 244);
+}
+#i8
+{
+    color: crimson;
+    background-color: rgb(204, 169, 30);
+}
