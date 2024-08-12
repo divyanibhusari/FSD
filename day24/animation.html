@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            margin-top: 10px;
+            color: rgb(234, 234, 241);
+            font-size: large;
+            animation: moveright 14s ease infinite;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+            left:0;
+
+        }
+        #d1{
+            animation-timing-function: ease;
+            background-color: blueviolet;
+        }
+        #d2{
+            animation-timing-function: linear;
+            background-color: rgb(238, 239, 236);
+            color: black;
+        }
+        #d3{
+            animation-timing-function: ease-in;
+            background-color: rgb(214, 168, 171);
+        }
+        #d4{
+            animation-timing-function: ease-out;
+            background-color: rgb(239, 10, 174);
+        }
+        #d5{
+            animation-timing-function: ease-in-out;
+            background-color: rgb(228, 141, 20);
+        }
+        #d6{
+            animation-timing-function: steps(10);
+            background-color: rgb(10, 221, 28);
+        }
+        #d7{
+            animation-timing-function: cubic-bezier(1,1,1);
+            background-color: rgb(11, 211, 242);
+        }
+        @keyframes moveright{
+            0%{
+                left: 0;
+              
+            }
+            50%{
+                left: 100%;
+            }
+            100%
+            {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="d" id=d1>ease</div>
+    <div class="d" id=d2 >linear</div>
+    <div class="d" id=d3>ease-in</div>
+    <div class="d" id=d4>ease-out</div>
+    <div class="d" id=d5>ease-in-out</div>
+    <div class="d"  id=d6>steps</div>
+    <div class="d" id=d7>cubic-beizer</div>
+
+</body>
+</html>
