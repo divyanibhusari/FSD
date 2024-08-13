@@ -1,21 +1,25 @@
-*{
-    padding: 0;margin: 0;
+* {
+    padding: 0;
+    margin: 0;
     font-family: sans-serif;
 }
-:root{
- --padding-x:2rem;
- --padding-y:1rem;
+
+:root {
+    --padding-x: 2rem;
+    --padding-y: 1rem;
 }
-#navbar-1 > .sub-navbars{
-  background-color: rgb(18, 18, 244);
-  color: white;
-  font-weight: 400;
-  padding: var(--padding-y) var(--padding-x);
-  display: flex;
+
+#navbar-1>.sub-navbars {
+    background-color: rgb(18, 18, 244);
+    color: white;
+    font-weight: 400;
+    padding: var(--padding-y) var(--padding-x);
+    display: flex;
     justify-content: space-between;
 
 }
-#navbar-1 > .main-navbars{
+
+#navbar-1>.main-navbars {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,59 +28,66 @@
     color: white;
     padding: calc(1px + var(--padding-y)) calc(5px + var(--padding-x));
 }
-#navbar-1 > .main-navbars > .menu-navbars{
-    display:flex ;
+
+#navbar-1>.main-navbars>.menu-navbars {
+    display: flex;
     list-style: none;
 }
-.logo-navbars{
+
+.logo-navbars {
     font-size: 210%;
     font-family: cursive;
     text-transform: uppercase;
     text-shadow: 15px 10px 15px rgba(162, 11, 244, 0.899);
 }
-#navbar-1 > .main-navbars > .menu-navbars >.menu-item{
+
+#navbar-1>.main-navbars>.menu-navbars>.menu-item {
     padding: 0 2rem;
-    color: blue ;
+    color: blue;
     font-size: larger;
     transition: all 1s ease;
     position: relative;
     z-index: 1;
     background-color: transparent;
-  
 
-    
+
+
 }
-#navbar-1 > .main-navbars > .menu-navbars >.menu-item:hover{
+
+#navbar-1>.main-navbars>.menu-navbars>.menu-item:hover {
     color: rgb(215, 57, 0);
-  animation: moveright 15s ease-in alternate;
-   
+    animation: moveright 15s ease-in alternate;
+
 }
-@keyframes moveright{
-    0%{ 
+
+@keyframes moveright {
+    0% {
         right: 10px;
         bottom: 0;
-      top: 10px;
-      left: 0;
+        top: 10px;
+        left: 0;
     }
-    50%{
+
+    50% {
         right: 10px;
         bottom: 100%;
         top: 10px;
         left: 0;
     }
-    100%
-    {
+
+    100% {
         right: 10px;
         bottom: 0;
         top: 10px;
         left: 0;
     }
 }
-#navbar-1 > .main-navbars > .menu-navbars >.menu-item::before{
+
+#navbar-1>.main-navbars>.menu-navbars>.menu-item::before {
     content: "";
     width: 0;
     height: 2px;
-    background:conic-gradient(rgb(219, 7, 7),yellow);
+    background: conic-gradient(rgb(219, 7, 7), yellow);
     position: absolute;
     top: 30px;
     left: 0px;
@@ -84,19 +95,80 @@
     transition: all 0.34s ease;
 
 }
-#navbar-1 > .main-navbars > .menu-navbars >.menu-item:hover::before{
+
+#navbar-1>.main-navbars>.menu-navbars>.menu-item:hover::before {
     width: 100%;
 }
-#navbar-1 > .main-navbars .button-navbars{
+
+#navbar-1>.main-navbars .button-navbars {
     padding: 1rem 2rem;
     border-radius: 24px;
     background-color: rgb(167, 123, 123);
     color: rgb(62, 15, 234);
     font-size: larger;
-    font-size: bold;
-  
+    position: relative;
+    left: 35px;
+    top: 45%;
+    z-index: 1;
+    
 }
-#navbar-1 > .main-navbars .button-navbars:hover{
-    color:black;
-    background-color: crimson;
+
+#navbar-1>.main-navbars .button-navbars:hover {
+    color: rgb(236, 225, 225);
 }
+
+#navbar-1>.main-navbars .button-navbars::before {
+    content: "";
+    width: 0;
+    height: 55px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 24px;
+    transition: all 0.5s ease-in;
+}
+
+#navbar-1>.main-navbars .button-navbars:hover::before {
+
+    width: 100%;
+    background-color: rgb(16, 237, 38);
+}
+.mobile-menu-Trigger{
+    display: none;
+}
+@media screen and (max-width:576px){
+    .sub-navbars .text,.main-navbars .menu-navbars,.main-navbars .button-navbars{
+        display: none !important;
+
+
+    }
+    .main-navbars{
+        padding: var(--padding-y) var(--padding-x) !important;
+        position: relative;
+    }
+    .mobile-menu-Trigger{
+     display: inline !important;
+     position: absolute;
+     right: 10px;
+        
+    }
+        /* open menu on hover on click */
+        .mobile-menu-Trigger:hover + .menu-navbars{
+            width: 100%;
+            height: 500px;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgb(138, 43, 226);
+            color: rgb(189, 21, 21) !important;
+            flex-direction: column;
+            gap: 5rem;
+            font-weight: bold;
+            z-index: 99999;
+        }
+      
+}     
