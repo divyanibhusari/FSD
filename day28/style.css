@@ -1,0 +1,32 @@
+*{
+    margin: 0;padding: 0;
+    background-color: black;
+}
+:root{
+    --paddingX:6%;
+    --paddingY:13%;
+}
+.Footer > .s1 > .d1{
+        color: rgb(227, 155, 155);
+        padding: var(--paddingY) var(--paddingX);
+       
+}
+.Footer > .s1 > .d1 >.d2{
+    color: rgb(227, 155, 155);
+    display: flex;
+    padding-top: 1%;
+}
+.Footer > .s1 > .d1 + .im1{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+button{
+    border: 5px solid white;
+    color: rgb(221, 132, 132);
+    background-color: blue;
+}
+button:hover{
+    color: rgb(224, 211, 211);
+
+}
