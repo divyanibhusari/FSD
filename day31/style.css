@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color1: #49243E;
+    --color2: #704264;
+    --color3: #BB8493;
+    --color4: #DBAFA0;
+    --paddingx: 4rem;
+    --paddingy: 1rem;
+}
+
+.navbars {}
+
+.text-1 {
+
+    background-color: var(--color3);
+    padding: var(--paddingy) var(--paddingx);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Navigation{
+    font-weight: bolder;
+   
+    
+}
+.c1{
+    padding: 10px;
+}
+.name{
+    position: absolute;
+    left: 80px;
+    top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color4);
+    font-size: 290%;
+}
+.Navigation-Menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: absolute;
+    left: 55%;
+    top: 12.6%;
+    gap: 5%;
+    color: var(--color4);
+    text-transform: capitalize;
+    font-size: large;
+    font-weight: bolder;
+}
+/* .Navigation-Menu::before{
+    width: 0;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+} */
+.menu-item{
+    font-weight: bolder;
+    color: var(--color4);
+    position: relative;
+    transition: all 0.9s ease;
+    z-index: 1;
+}
+.menu-item::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 50px;
+    z-index: -1;
+    color: var(--color1);
+}
+.menu-item:hover{
+    color: var(--color1);
+    background-color: #DBAFA0;
+}
+.menu-item:hover:before{
+    width: 100%;
+}
+
+.bta-button{
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+   background-color: var(--color3);
+   color: var(--color1);
+   font-weight: bolder;
+   position: relative;
+   z-index: 1;
+   transition: all 0.5s ease-in;
+}
+.bta-button:hover{
+    background-color: var(--color1);
+    color: var(--color4);
+}
+.bta-button::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 50%;
+    background-color: var(--color1);
+   /* transition: all 1s ease-in; */
+    z-index: -1;
+}
+.bta-button:hover::before{
+    width: 100%;
+}
+.heros{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    display: grid;
+    
+    color: white;
+}
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    word-break: 100%;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10%;
+    gap: 10%;
+    color: var(--color4);
+}
+.q1 > .p1{
+  
+    position: relative;
+    top: 20%;
+    left: 29%;
+    transition: all 1s ease-in-out;
+    width: 140px;
+    height: 50px;
+    gap: 40%;
+    border-radius: 24px;
+    word-spacing: 2px;
+    background-color: var(--color4);
+    font-size: larger;
+    z-index: 1;
+}
+.q1 > .p1:hover{
+    background-color: var(--color1);
+}
+.q1 > .p1::before{
+    background-color: var(--color4);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 50px;
+    z-index: -1;
+}
+.q1 > .p1:hover::before{
+    width: 100%;
+}
+.q1 > .p2{
+  
+    position: relative;
+    top: 20%;
+    left: 29%;
+    transition: all 1s ease-in-out;
+    width: 120px;
+    height: 50px;
+    gap: 40%;
+    border-radius: 24px;
+    word-spacing: 2px;
+    background-color: var(--color1);
+    font-size: larger;
+    z-index: 1;
+    
+}
+.q1 > .p2:hover{
+    background-color: var(--color4);
+}
+.q1 > .p2::before{
+    background-color: var(--color1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 50px;
+    z-index: -1;
+}
+.q1 > .p2:hover::before{
+    width: 100%;
+}
