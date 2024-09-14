@@ -91,16 +91,71 @@
 // console.log(str)
 
 // revrse string:-
-let string = "divyani"
-let revstr = ""
-for(let length=string.length ; length != 0 ; length --){
-    revstr = revstr + string[length-1]
-    console.log(string.length)   //only index no.
+// let string = "divyani"
+// let revstr = ""
+// for(let length=string.length ; length != 0 ; length --){
+//     revstr = revstr + string[length-1]
+//     console.log(string.length)   //only index no.
   //  console.log(length)       // index number 
-}
-console.log(revstr)
+// }
+// console.log(revstr)
 
-let str = Number(prompt("Enter the name"))
-for(let length=0 ; str[length] != undefined ; length ++){
-    console.log(str)
-}
+// let str = Number(prompt("Enter the name"))
+// for(let length=0 ; str[length] != undefined ; length ++){
+//     console.log(str)
+// }
+
+//factorial Number
+// let originalNumber = number=9
+// let factorial = 1
+
+// for(number=9 ; number != 0 ; number--){
+//   factorial=factorial*number
+// }
+// console.log("factorial of " + originalNumber + " is :" + factorial)
+
+//reverse number
+// let number = originalNumber =1021
+// let reverse=0
+// let d=0
+// for(;number !=0;){
+//   d = number % 10
+//   reverse = reverse *10+d
+//   number = parseInt(number/10)
+
+// }
+// console.log(reverse)
+
+
+// sum of number
+// let number = originalnumber = 9
+// let d =0
+// let sum =0
+// for(; number !=0;){
+//   d = number%10
+//   sum =sum +(d*d*d)
+//   number=parseInt(number/10)
+// }
+// console.log(sum)
+
+// Amstrong number
+
+// let number = originalnumber = 153
+// let d =0
+// let sum =0
+// for(;number!=0;){
+//   d = number%10
+//   sum =sum +(d*d*d)
+//   number=parseInt(number/10)
+// }
+// console.log(sum)
+
+
+//array
+
+// let number = [1,2,3,4,5,6,7,8,9,10,"divyani"]
+
+// for(let index = 0 ; index < number.length ; index++){
+//   console.log(number[index])
+// }
+// console.log(number[number.length+1])
