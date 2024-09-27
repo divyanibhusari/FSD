@@ -140,15 +140,15 @@
 
 // Amstrong number
 
-// let number = originalnumber = 153
-// let d =0
-// let sum =0
-// for(;number!=0;){
-//   d = number%10
-//   sum =sum +(d*d*d)
-//   number=parseInt(number/10)
-// }
-// console.log(sum)
+let number = originalnumber = 123
+let d =0
+let sum =0
+for(number=123;number!=0;number=parseInt(number/10)){
+  d = number%10
+  sum =sum +(d*d*d)
+  
+}
+console.log(sum)
 
 
 //array
@@ -158,4 +158,4 @@
 // for(let index = 0 ; index < number.length ; index++){
 //   console.log(number[index])
 // }
-// console.log(number[number.length+1])
+// console.log(number[number.length-1])
