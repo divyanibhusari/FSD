@@ -1,0 +1,36 @@
+ .fruit-row{
+    background-color: rgb(213, 168, 61);
+    color: white;
+} .Name{
+    background-color: blueviolet;
+    color: black;
+} 
+.Name:hover{
+    background-color: chartreuse;
+    color:rgb(201, 67, 145);
+}
+.StockUnit{
+    background-color: darksalmon;
+    color: crimson;
+}
+.Description{
+    background-color: rgb(225, 99, 141);
+    color: #453e3e;
+}
+.Description:hover{
+    background-color: rgb(131, 192, 131);
+    font-family: sans-serif;
+} 
+.Color{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(144, 21, 21);
+
+
+}
+.Color:hover{
+    color: #000;
+    font-family: sans-serif;
+}
+ .name{
+    background-color: red;
+ }

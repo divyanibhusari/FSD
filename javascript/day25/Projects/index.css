@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color1: #b750c5;
+    --color2: #ca8aac;
+    --color3: #c39ca2;
+    --color4: #ebcece;
+}
+
+/* header */
+.header {
+    padding: 1rem 2.5rem;
+    background-color: var(--color1);
+    color: var(--color4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-i-font {
+    font-size: 1.4rem;
+}
+
+.header-text {
+    font-size: 1.4rem;
+}
+
+.header-icon {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+/* list-container */
+.btn{
+    width: 100px;
+    height: 100px;
+}
+.btn-form{
+
+    display: none;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body>.list-container {
+    flex-grow: 1;
+    overflow: scroll;
+    background-color: var(--color3);
+    display: flex;
+    justify-content: center;
+    padding:  2rem;
+    
+}
+.list-container-input{
+   
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0.6rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.date{
+    border: none;
+    border-radius: 30px;
+    gap: 1rem;
+}
+.task-important-radio{
+    gap: 1rem;
+}
+.list-container-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   
+}
+.task-important-radio{
+    /* flex-grow: 1; */
+    /* gap: 2rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-container-btn-1{
+    /* padding: 0 2rem; */
+   width: 100px;
+   height: 40px;
+   background-color: var(--color1);
+   border: none;
+   outline: none;
+    color: var(--color4);
+}
+.list-container-btn-2{
+    /* padding: 0 2rem; */
+   width: 100px;
+   height: 40px;
+   background-color: var(--color4);
+   border: none;
+   outline: none;
+    color: var(--color1);
+
+}
+/* footer */
+.footer {
+    padding: 2rem;
+    background-color: var(--color2);
+    color: var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-link {
+    text-decoration: none;
+}
