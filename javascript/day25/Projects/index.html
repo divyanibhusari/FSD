@@ -11,6 +11,7 @@
 
 <body>
     <!-- Header -->
+
     <div class="header">
         <span>
             <span class="header-i-font">
@@ -18,7 +19,9 @@
             </span>
             <span class="header-text">To-Do-List</span>
         </span>
-
+        <div>
+            <button id="Target-Btn-From">Open form</button>
+        </div>
 
         <ul class="header-icon">
             <li><i class="fa-brands fa-github"></i></li>
@@ -26,42 +29,66 @@
             <li><i class="fa-brands fa-twitter"></i></li>
             <li><i class="fa-brands fa-instagram"></i></li>
         </ul>
-
+       
     </div>
+    <div class="table">
+        <table id="table-form" border="1">
+            <thead>
+                <tr>
+                    <th>TaskName</th>
+                    <th>Taskdescription</th>
+                    <th>TaskDate</th>
+                    <th>TaskTime</th>
+                    <th>TaskFeedBack</th>
+                </tr>
+            </thead>
+            <tbody id="tasktable">
+                
+            </tbody>
+        </table>
+    </div>
+    
     <!-- list Container -->
-     <button id="btn">click</button>
-    <!-- <div class="btn-form"> -->
-        <div class="list-container">
-            <form action="">
-               <div class="list-container-form">
-              
-               <input class="list-container-input" type="text" placeholder="Task Name">
-               <textarea class="list-container-input" name="text" id="" placeholder="decription"></textarea>
-              
-               <div class="date">
-                   <input   type="date" placeholder="date">
-                   <input  type="time" placeholder="time">
-               </div>
-               <h3>Task Important</h3>
-               <div class="task-important-radio">
+   
+    <div class="list-container">
+        
+        <div id="popupform">
+            <form id="form1" action="">
+                <div class="list-container-form">
+
+                    <input class="list-container-input" name="name" placeholder="Task Name">
+                    <textarea class="list-container-input" name="decription" id="" placeholder="decription"></textarea>
+
+                    <div class="date">
+                        <input type="date" name="date" placeholder="date">
+                        <input type="time" name="time" placeholder="time">
+                    </div>
+                    <h3>Task Important</h3>
+                    <div class="task-important-radio" name="TaskFeedBack">
+                       
+                        <input type="radio" name="Important" value="Less" id=""> Less
+                        <input type="radio" name="Important" value="Moderate"> Moderate
+                        <input type="radio" name="Important" value="Good">Good
+            
+                    </div>
+
+                    <div class="list-container-btn">
+                        <button class="list-container-btn-1" type="submit">Add Task</button>
+                        <button class="list-container-btn-2" type="reset">Reset</button>
+                    </div>
                   
-                   <input type="radio" name="" id=""> Less
-                   <input type="radio" name="" id=""> Moderate
-                   <input type="radio" name="" id="">Good
-               </div>
-               <div class="list-container-btn">
-                  <button class="list-container-btn-1">Add Task</button>
-                  <button class="list-container-btn-2">Reset</button>
-               </div>
-               <!-- </div> -->
-               
+                </div>
+                <button id="popupform-close">
+                    <i class="fa-solid fa-xmark "></i>
+                </button>  
+                <!-- <button type="submit">submit</button>        -->
             </form>
-            </div>
+        </div>
     </div>
     <!-- footer -->
-     <div class="footer">
-        <span >Made By <a class="footer-link" href="https://web.whatsapp.com/">@Whatsapp</a></span>
-     </div>
+    <div class="footer">
+        <span>Made By <a class="footer-link" href="https://web.whatsapp.com/">@Whatsapp</a></span>
+    </div>
 </body>
 <script src="./index.js" type="text/javascript"></script>
 

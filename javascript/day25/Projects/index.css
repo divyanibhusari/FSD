@@ -35,10 +35,11 @@
 }
 
 /* list-container */
-.btn{
+.btn {
     width: 100px;
     height: 100px;
 }
+
 /* .btn-form{
 
     display: none;
@@ -55,12 +56,34 @@ body>.list-container {
     overflow: scroll;
     background-color: var(--color3);
     display: flex;
+    /*
     justify-content: center;
-    padding:  2rem;
-    
+    padding:  2rem; */
+
 }
-.list-container-input{
-   
+
+#Target-Btn-From {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: var(--color4);
+}
+
+#popupform {
+    background-color: red;
+    display: inline-block;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: 500vh solid rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.list-container-input {
+
     border-radius: 5px;
     border: none;
     outline: none;
@@ -69,47 +92,73 @@ body>.list-container {
     align-items: center;
     justify-content: center;
 }
-.date{
+
+.date {
     border: none;
     border-radius: 30px;
     gap: 1rem;
 }
-.task-important-radio{
+
+.task-important-radio {
     gap: 1rem;
 }
-.list-container-form{
+
+.list-container-form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-   
+
 }
-.task-important-radio{
+
+.task-important-radio {
     /* flex-grow: 1; */
     /* gap: 2rem; */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.list-container-btn{
+    /* transform: translate(10%,10%); */
+    display: flex;
+    flex-grow: 1;
+    gap: 1rem;
+    padding: 1rem;
+}
 
-.list-container-btn-1{
+.list-container-btn-1 {
     /* padding: 0 2rem; */
-   width: 100px;
-   height: 40px;
-   background-color: var(--color1);
-   border: none;
-   outline: none;
+    width: 100px;
+    height: 40px;
+    background-color: var(--color1);
+    border: none;
+    outline: none;
     color: var(--color4);
 }
-.list-container-btn-2{
+
+.list-container-btn-2 {
     /* padding: 0 2rem; */
-   width: 100px;
-   height: 40px;
-   background-color: var(--color4);
-   border: none;
-   outline: none;
+    width: 100px;
+    height: 40px;
+    background-color: var(--color4);
+    border: none;
+    outline: none;
     color: var(--color1);
 
 }
+
+#popupform-close {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    border: 0;
+    outline: none;
+    border-radius: 100%;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+
+}
+
 /* footer */
 .footer {
     padding: 2rem;
