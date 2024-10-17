@@ -14,7 +14,7 @@ form.addEventListener("submit", (event) => {
         let value = event.target[i].value
         task = {
             ...task, [name]: value,
-         
+
         }
     }
 
@@ -23,11 +23,11 @@ form.addEventListener("submit", (event) => {
 
     let feedBackValue = ""
 
-    for(let TaskFeedBack of TaskFeedBacks){
-        if(TaskFeedBack.checked){
+    for (let TaskFeedBack of TaskFeedBacks) {
+        if (TaskFeedBack.checked) {
             feedBackValue = TaskFeedBack.value
         }
-    }   
+    }
 
     task.importance = feedBackValue
 
@@ -40,6 +40,22 @@ form.addEventListener("submit", (event) => {
     displayFunction(tasks)
 
 });
+
+//delete 
+function deleteButton(dellindex) {
+    console.log("delete button called by  ", dellindex)
+   
+    tasks = tasks.filter((task, index)=>{
+
+    
+        return dellindex !== index;
+        
+
+    })
+    refreshTbody()
+    displayFunction(tasks)
+   
+}
 let refreshTbody = () => {
     let tasktable = document.getElementById("tasktable")
     let rows = document.querySelectorAll("#tasktable > tr")
@@ -51,6 +67,7 @@ let refreshTbody = () => {
 
 let displayFunction = (tasks) => {
     let tasktable = document.getElementById("tasktable")
+    let index = 0;
     for (let task of tasks) {
         let newTaskRow = document.createElement("tr")
 
@@ -61,10 +78,11 @@ let displayFunction = (tasks) => {
         }
 
         let deleteButton = document.createElement("td")
-        deleteButton.innerHTML = "<button id='deleteBtn'>delete</button>"    
+        deleteButton.innerHTML =  `<button id='deleteBtn' onclick='deleteButton (${index})'>delete</button>`
 
         newTaskRow.appendChild(deleteButton)
         tasktable.appendChild(newTaskRow)
+        index++
     }
 }
 displayFunction(tasks)
@@ -77,9 +95,9 @@ let popupform = document.getElementById("popupform");
 
 let ClosePopUpBtn = document.getElementById("popupform-close");
 
-let removeButton =document.getElementById("Remove-btn");
+let removeButton = document.getElementById("Remove-btn");
 targetbtn.addEventListener("click", (event) => {
-    
+
     event.preventDefault()
     popupform.style.display = "inline-block";
 
@@ -88,21 +106,3 @@ ClosePopUpBtn.addEventListener("click", (event) => {
     event.preventDefault()
     popupform.style.display = "none";
 });
-// removeButton.addEventListener("click",(event)=>{
-//     event.preventDefault()
-
-
-// })
-
-
-// let radioBtns = document.querySelectorAll("input[name = 'TaskFeedBack']");
-// let output = document.getElementById("output");
-// let findselected =()=>{
-//     let Selected = document.querySelector("input[name='TaskFeedBack']:checked").value;
-//     output.textContent = `value of selected radio button: ${Selected} `;
-// }
-// radioBtns.forEach(radioBtns =>{
-//     radioBtns.addEventListener("change",findselected);
-    
-// });
-// findselected();
