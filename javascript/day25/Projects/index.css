@@ -99,7 +99,7 @@ body>.list-container {
     gap: 1rem;
 }
 
-.task-important-radio {
+#task-important-radio {
     gap: 1rem;
 }
 
@@ -171,4 +171,14 @@ body>.list-container {
 
 .footer-link {
     text-decoration: none;
+}
+#Remove-btn{
+  border: none;
+  outline: none;
+ position: absolute;
+ margin-left: 391px;
+ margin-top: -20px;
+ border: 1px solid black;
+padding: -12px;
+background-color: var(--color1);
 }

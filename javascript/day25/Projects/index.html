@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <!-- Header -->
+<!-- Header -->
 
     <div class="header">
         <span>
@@ -31,6 +31,7 @@
         </ul>
        
     </div>
+<!-- body -->
     <div class="table">
         <table id="table-form" border="1">
             <thead>
@@ -39,12 +40,13 @@
                     <th>Taskdescription</th>
                     <th>TaskDate</th>
                     <th>TaskTime</th>
-                    <th>TaskFeedBack</th>
+                    <th>Importance</th>             
                 </tr>
+               
             </thead>
             <tbody id="tasktable">
-                
             </tbody>
+            <!-- <th><button id="">Remove</button></th> -->
         </table>
     </div>
     
@@ -56,24 +58,26 @@
             <form id="form1" action="">
                 <div class="list-container-form">
 
-                    <input class="list-container-input" name="name" placeholder="Task Name">
-                    <textarea class="list-container-input" name="decription" id="" placeholder="decription"></textarea>
+                    <input class="list-container-input"id="list-container-input-1" name="name" placeholder="Task Name">
+                    <textarea class="list-container-input" name="decription" id="list-container-input-4" placeholder="decription"></textarea>
 
                     <div class="date">
-                        <input type="date" name="date" placeholder="date">
-                        <input type="time" name="time" placeholder="time">
+                        <input type="date" name="date" placeholder="date" id="list-container-input-2">
+                        <input type="time" name="time" placeholder="time" id="list-container-input-3">
                     </div>
                     <h3>Task Important</h3>
-                    <div class="task-important-radio" name="TaskFeedBack">
+                    <div id="task-important-radio" >
                        
-                        <input type="radio" name="Important" value="Less" id=""> Less
-                        <input type="radio" name="Important" value="Moderate"> Moderate
-                        <input type="radio" name="Important" value="Good">Good
-            
-                    </div>
+                        <input type="radio" class="TaskFeedBack" name="importance" value="Less" id="list-container-input-3" checked> Less
+                        <input type="radio" class="TaskFeedBack" name="importance" value="Moderate"  > Moderate 
+                        <input type="radio" class="TaskFeedBack" name="importance" value="Good">Good
 
+                        <p id="output"></p>
+                    </div>
+                   
+                    
                     <div class="list-container-btn">
-                        <button class="list-container-btn-1" type="submit">Add Task</button>
+                        <button class="list-container-btn-1" type="submit" >Add Task</button>
                         <button class="list-container-btn-2" type="reset">Reset</button>
                     </div>
                   
@@ -83,9 +87,11 @@
                 </button>  
                 <!-- <button type="submit">submit</button>        -->
             </form>
+            
+
         </div>
     </div>
-    <!-- footer -->
+<!-- footer -->
     <div class="footer">
         <span>Made By <a class="footer-link" href="https://web.whatsapp.com/">@Whatsapp</a></span>
     </div>
