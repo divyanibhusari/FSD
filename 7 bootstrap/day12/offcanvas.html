@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid bg-dark">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <h1 class="text-light">Bootstrap</h1>
+                <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvas1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" id="offcanvas1">
+                    <div class="offcanvas-header">
+                        <span class="fw-bolder">Main Menu</span>
+                        <button class="btn btn-colse bg-danger position-absolute end-100 top-10 rounded-circle" data-bs-dismiss="offcanvas">
+                            <span><i class="fa-solid fa-xmark"></i></span>
+                        </button>
+                </div>
+                <div class="offcanvas-body bg-dark text-center" >
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Document</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Home</a>
+                    </li>
+                    <li class="nav-item dropdown" id="dropdown2">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#dropdown2">Folder</a>
+                        <ul class="dropdown-menu text-center">
+                            <li class="dropdown-menu-item">
+                                <a class="dropdown-menu-link text-decoration-none  text-dark " href="">File 1</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a class="dropdown-menu-link text-decoration-none  text-dark" href="">File 2</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a class="dropdown-menu-link text-decoration-none  text-dark" href="">File 3</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a class="dropdown-menu-link text-decoration-none  text-dark" href="">File 4</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
