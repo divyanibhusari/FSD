@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid bg-dark">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <h1 class="text-light">Logo</h1>
+                <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#Menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-bottom " data-bs-backdrop="static" id="Menu">
+                    <div class="offcanvas-header bg-light">
+                        <span class="fw-bolder ">Main Menu</span>
+                        <button class="btn btn-colse text-light bg-dark position-absolute start-100 top-0 translate-middle rounded-circle" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                   
+
+                   
+                <div class="offcanvas-body  bg-dark text-center" >
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Service</a>
+                        </li>
+                        <li class="nav-item dropdown" id="abc">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#abc">Contact us</a>
+                            <ul class="dropdown-menu ms-auto text-center">
+                                <li class="dropdown-menu-item">
+                                    <a class="dropdown-menu-link text-dark text-decoration-none" href="">a.</a>
+                                </li>
+                                <li class="dropdown-menu-item">
+                                    <a class="dropdown-menu-link text-dark text-decoration-none" href="">b.</a>
+                                </li>
+                                <li class="dropdown-menu-item">
+                                    <a class="dropdown-menu-link text-dark text-decoration-none" href="">c.</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" id="da">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  href="#da">Option</a>
+                            <ul class="dropdown-menu  ms-auto text-center ">
+                                <li class="dropdown-menu-item">
+                                    <a class="dropdown-menu-link text-dark text-decoration-none" href="">Opt 1</a>
+                                </li>
+                                <li class="dropdown-menu-item">
+                                    <a class="dropdown-menu-link text-dark text-decoration-none" href="">opt 2</a>
+                                </li>
+                                <li class="dropdown-menu-item">
+                                    <a class="dropdown-menu-link text-dark text-decoration-none" href="">opt 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>
